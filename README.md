@@ -88,7 +88,7 @@ you-markdown/
 
 ### 文档管理
 
-访问 `your-domain.com/sc.php` 进入管理界面。
+访问 `你的域名/sc.php` 进入管理界面。
 
 **默认密码：`youyou`**
 
