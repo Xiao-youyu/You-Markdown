@@ -131,4 +131,4 @@ you-markdown/
 - [marked](https://github.com/markedjs/marked) — Markdown 解析器
 - [highlight.js](https://github.com/highlightjs/highlight.js) — 语法高亮
 - [QRCode.js](https://github.com/davidshimjs/qrcodejs) — 二维码生成
-- [Mizuki](https://github.com/LyraVoid/Mizuki) — 代码块和暗色模式设计灵感
+- [Mizuki](https://github.com/LyraVoid/Mizuki) — 项目Ui设计灵感
