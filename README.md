@@ -74,8 +74,6 @@ you-markdown/
 ├── index.php              # 主页面（阅读器 + API）
 ├── sc.php                 # 文档管理页面
 ├── api.php                # 评论 / 用户 API
-├── comment.php            # 评论系统（旧版兼容）
-├── check.php              # 自检工具（用完建议删除）
 ├── .htaccess              # URL 重写规则
 ├── LICENSE                # MIT 许可证
 ├── README.md              # 项目说明
