@@ -1,0 +1,14 @@
+{
+    "site_title": "You Markdown",
+    "reg_limit_per_ip": 3,
+    "comments_enabled": true,
+    "auto_ban": true,
+    "auto_ban_unauthorized": true,
+    "registration_enabled": true,
+    "guest_comments_enabled": false,
+    "max_login_fails": 10,
+    "max_comments_per_minute": 5,
+    "max_registrations_per_ip": 3,
+    "update_channel": "stable",
+    "auto_check_update": true
+}

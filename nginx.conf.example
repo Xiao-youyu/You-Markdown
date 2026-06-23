@@ -1,0 +1,22 @@
+# Nginx 配置示例 — 放在 server {} 块内
+# 如果你使用 Nginx，请将以下内容添加到你的站点配置中
+
+# 自定义 404 页面
+error_page 404 /404.php;
+location = /404.php {
+    fastcgi_pass unix:/run/php/php-fpm.sock;  # 根据你的 PHP-FPM 配置调整
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include fastcgi_params;
+}
+
+# 主路由：不存在的文件/目录 → index.php
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+
+# PHP 处理
+location ~ \.php$ {
+    fastcgi_pass unix:/run/php/php-fpm.sock;  # 根据你的 PHP-FPM 配置调整
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include fastcgi_params;
+}

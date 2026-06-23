@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api.php
+Disallow: /sc.php
+Disallow: /youyou/
+Disallow: /data/
