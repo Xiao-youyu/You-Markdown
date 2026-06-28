@@ -1,5 +1,5 @@
 <?php
-define('APP_VERSION', '1.3.0');
+define('APP_VERSION', '1.4.0');
 function loadUsers() {
     $f = __DIR__ . '/data/.users.json';
     if (!file_exists($f)) return [];
