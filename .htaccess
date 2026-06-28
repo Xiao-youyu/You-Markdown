@@ -1,0 +1,15 @@
+# Apache 配置（Nginx 用户请参考 nginx.conf.example）
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 如果是真实存在的文件或目录，直接访问
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    ErrorDocument 404 /404.php
+
+    # 其他所有不存在的请求 -> index.php（保留原始 query string）
+    RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule>
